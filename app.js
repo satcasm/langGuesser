@@ -1,7 +1,7 @@
 const franc = require("franc"),
     langs = require("langs");
 require("colors");
-const sentence = process.argv[2];
+const sentence = process.argv[2];       // The sentence is the string written after node app.js
 const key = franc(sentence);
 const result = langs.where("3", key);
 if (result === undefined)
